@@ -24,6 +24,8 @@ class TaskListCreateView(APIView):
 
 # /api/tasks/<id>/  → GET (single), PATCH (update), DELETE (remove)
 class TaskDetailView(APIView):
+  
+
     def get(self, request, pk):
         task = get_object_or_404(Task, pk=pk)
         serializer = TaskSerializer(task)
