@@ -187,7 +187,7 @@ const Navbar = () => {
         </div>
       )}
 
-      {/* 🔹 Register Modal */}
+      {/*  Register Modal */}
       {showRegister && (
         <div
           className="modal fade show d-block"

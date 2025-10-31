@@ -1,5 +1,4 @@
 from django.shortcuts import render
-
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -7,7 +6,7 @@ from .models import *
 from .serializers import TaskSerializer
 from django.shortcuts import get_object_or_404
 
-# /api/tasks/  → GET (all), POST (create)
+
 class TaskListCreateView(APIView):
     def get(self, request):
         tasks = Task.objects.all().order_by('-created_at')
@@ -22,7 +21,7 @@ class TaskListCreateView(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-# /api/tasks/<id>/  → GET (single), PATCH (update), DELETE (remove)
+
 class TaskDetailView(APIView):
   
 

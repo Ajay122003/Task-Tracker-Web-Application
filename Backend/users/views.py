@@ -5,7 +5,7 @@ from django.contrib.auth.hashers import make_password
 from .models import *
 import json
 
-# ✅ Register View
+#  Register View
 @csrf_exempt
 def register_user(request):
     if request.method == "POST":
@@ -24,7 +24,7 @@ def register_user(request):
         )
         return JsonResponse({"message": "User registered successfully!"}, status=201)
 
-# ✅ Login View
+#  Login View
 @csrf_exempt
 def login_user(request):
     if request.method == "POST":
