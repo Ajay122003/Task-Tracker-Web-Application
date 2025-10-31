@@ -31,12 +31,12 @@ Users can create, update, mark complete, and delete tasks easily with a clean, u
 cd backend
 python -m venv taskapp
 taskapp\Scripts\activate 
-source venv/bin/activate 
 python manage.py runserver
 
 ###  Frontend (React.js)
 
 cd Frontend
 npm run dev
+
 
 
