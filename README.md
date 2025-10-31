@@ -1,4 +1,4 @@
-#Task Tracker Web Application
+Task Tracker Web Application
 
 A simple Full Stack Task Tracker App built using React.js (Frontend) and Django REST Framework (Backend) databas SQL.  
 Users can create, update, mark complete, and delete tasks easily with a clean, user-friendly interface.
@@ -35,7 +35,8 @@ source venv/bin/activate
 python manage.py runserver
 
 ###  Frontend (React.js)
-```bash
+
 cd Frontend
 npm run dev
+
 
