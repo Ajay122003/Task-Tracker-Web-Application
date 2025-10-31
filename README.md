@@ -34,7 +34,8 @@ taskapp\Scripts\activate
 source venv/bin/activate 
 python manage.py runserver
 
-###  Backend (React.js)
-
+###  Frontend (React.js)
+```bash
 cd Frontend
 npm run dev
+
